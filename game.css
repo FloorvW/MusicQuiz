@@ -1,0 +1,130 @@
+#question{
+    color: #3e5c88;
+    /* border: 0.2rem solid #3e4e88 ; */
+    /* border-radius: 20px; */
+    /* background-color: white; */
+    /* padding: 1.5rem; */
+    /* box-shadow: 2px 2px rgb(121,113,234, 0.5); */
+}
+.choice-container{
+    display: flex;
+    margin-bottom: 0.5rem;
+    width:100%;
+    font-size: 1.8rem;
+    /* border: 0.2rem solid #3e4e88; */
+    border-radius:20px;
+    background-color: white;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.choice-container:hover{
+    cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.choice-prefix{
+    padding:1.5rem 2.5rem;
+    background-color: #3e4e88;
+    background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+    border-radius: 20px;
+    color: white;
+}
+
+.choice-text{
+    padding: 1.5rem;
+    width: 100%;
+
+}
+
+.correct{
+    background-color: #1dd3bd;
+    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+
+}
+
+.incorrect{
+    background-color: #900c3f;
+    background-image: linear-gradient(to right, #900c3f 0%, #DC143C 51%, #900c3f 100%);
+}
+
+/*hud*/
+
+#hud{
+    display:flex;
+    justify-content: space-between;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.hud-prefix{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text{
+    text-align: center;
+}
+
+#progressBar{
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #3e4e88;
+    border-radius:20px;
+    margin-top: 1rem;
+}
+
+#progressBarFull{
+    height: 3.4rem;
+    background-color:  #7971ea;
+    border-radius: 20px;
+    width: 0%;
+    background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+}
+
+/*loader*/
+
+#loader {
+    border: 0.6rem solid #3e4e88;
+    border-radius: 50%;
+    border-top: 1.6rem solid #c2e9fb ;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 2s linear infinite; 
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+     }
+     100%{
+         transform: rotate(360deg);
+     }
+}
+
+@media screen and (max-width: 900px) {
+    .choice-container{
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+    }
+
+  
+}
+
+@media screen and (max-width: 600px) {
+    .choice-container{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 70%;
+    }
+
+    #question{
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+        font-size: 2.5rem;
+    }
+}

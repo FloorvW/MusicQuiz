@@ -1,0 +1,30 @@
+[
+    {
+       "question": "What is the the real first name of Rihanna?",
+            "choice1": "Hannah",
+            "choice2": "Robin",
+            "choice3": "Christina",
+           "answer": 2
+    },
+    {
+        "question": "Which Canadian artist released 'Man! I Feel Like A Woman!’ in 1999?",
+            "choice1": "Shania Twain",
+            "choice2": "Kylie Minogue",
+            "choice3": "Christina Aguilera",
+            "answer": 1
+    },
+    {
+        "question": "Britney Spears and Justin Timberlake famously turned up to the American Music Awards in 2001 wearing outfits made out of what?",
+            "choice1": "Tartan",
+            "choice2": "Trash bags",
+            "choice3": "Denim",
+           "answer": 3
+    },
+    {
+        "question": "Who had a hit with 'U Can't Touch This' in 1990?",
+            "choice1": "Snoop Dogg",
+            "choice2": "MC Hammer",
+            "choice3": "Shaggy",
+            "answer": 2
+    }
+]
